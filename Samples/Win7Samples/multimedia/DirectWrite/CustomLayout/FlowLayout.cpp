@@ -244,7 +244,7 @@ STDMETHODIMP FlowLayout::ShapeGlyphRun(
         if (textLength == 0)
             return S_OK; // Nothing to do..
 
-        HRESULT hr = S_OK;
+        hr = S_OK;
 
         ////////////////////
         // Allocate space for shaping to fill with glyphs and other information,

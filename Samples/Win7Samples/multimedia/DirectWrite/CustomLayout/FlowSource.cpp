@@ -76,7 +76,7 @@ STDMETHODIMP FlowLayoutSource::GetNextRect(float fontHeight, OUT RectF* nextRect
             float adjustedY  = (currentY_ + fontHeight/2) - halfHeight;
 
             // Determine x from y using circle formula d^2 = (x^2 + y^2).
-            float x     = sqrt((halfHeight * halfHeight) - (adjustedY * adjustedY));
+            float x     = (float)sqrt((halfHeight * halfHeight) - (adjustedY * adjustedY));
             rect.top    = currentY_;
             rect.bottom = currentY_ + fontHeight;
             rect.left   = halfWidth - x;

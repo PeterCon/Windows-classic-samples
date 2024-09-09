@@ -85,12 +85,12 @@ EXTERN_C IMAGE_DOS_HEADER __ImageBase;
 
 #define FAILURE_LOCATION L"\r\nFunction: " TEXT(__FUNCTION__) L"\r\nLine: " TEXT(STRINGIZE_(__LINE__))
 
-#if (_MSC_VER >= 1200) // want to use std::min and std::max
-#undef min
-#undef max
-#define min(x,y) _cpp_min(x,y)
-#define max(x,y) _cpp_max(x,y)
-#endif
+//#if (_MSC_VER >= 1200) // want to use std::min and std::max
+//#undef min
+//#undef max
+//#define min(x,y) _cpp_min(x,y)
+//#define max(x,y) _cpp_max(x,y)
+//#endif
 
 // Ignore unreferenced parameters, since they are very common
 // when implementing callbacks.
